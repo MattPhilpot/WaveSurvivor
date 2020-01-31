@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Upgrades"
+    android:textSize="50dp"
+    android:textStyle="bold"
+    android:gravity="center_horizontal|bottom"
+	android:textColor="#FFFFFFFF"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+		
+		<TextView  
+		    android:layout_weight=".45"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:text="You have "
+		    android:textSize="20dp"
+		    android:textStyle="bold"
+		    android:gravity="center_vertical|right"
+			android:textColor="#FFFFFFFF"/>
+		
+		<TextView  
+		    android:layout_weight=".1"
+		    android:id="@+id/upgrade_points"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:text="7"
+		    android:textSize="20dp"
+		    android:textStyle="bold"
+		    android:gravity="center_horizontal|bottom"
+			android:textColor="#FF0000"/>
+		
+		<TextView  
+		    android:layout_weight=".45"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:text=" points left"
+		    android:textSize="20dp"
+		    android:textStyle="bold"
+		    android:gravity="center_vertical|left"
+			android:textColor="#FFFFFFFF"/>	
+	</LinearLayout>
+	
+	
+	<TextView  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Ship Speed"
+		android:textSize="20dp"
+		android:gravity="center_horizontal|bottom"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFFFF"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+	
+	    <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00CC00"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+    		
+		<SeekBar
+			android:id="@+id/ship_speed"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|bottom"
+			android:layout_width="0dp"
+			android:max="5"
+			android:progress="0"
+			android:layout_weight=".80"/>
+			
+		<TextView
+		    android:id="@+id/ship_speed_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+		
+	</LinearLayout>
+
+	<TextView  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Ship Health"
+		android:textSize="20dp"
+		android:gravity="center_horizontal|bottom"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFFFF"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+	
+	    <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00CC00"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+    		
+		<SeekBar
+			android:id="@+id/ship_health"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|bottom"
+			android:layout_width="0dp"
+			android:max="5"
+			android:progress="0"
+			android:layout_weight=".80"/>
+			
+		<TextView
+		    android:id="@+id/ship_health_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+		
+	</LinearLayout>
+	
+	<TextView  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Ship Shield"
+		android:textSize="20dp"
+		android:gravity="center_horizontal|bottom"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFFFF"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+	
+	    <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00CC00"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+    		
+		<SeekBar
+			android:id="@+id/ship_shield"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|bottom"
+			android:layout_width="0dp"
+			android:max="5"
+			android:progress="0"
+			android:layout_weight=".80"/>
+			
+		<TextView
+		    android:id="@+id/ship_shield_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+		
+	</LinearLayout>
+	
+	<TextView  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Ship Shield Recharge Rate"
+		android:textSize="20dp"
+		android:gravity="center_horizontal|bottom"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFFFF"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+	
+	    <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00CC00"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+    		
+		<SeekBar
+			android:id="@+id/shield_recharge_rate"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|bottom"
+			android:layout_width="0dp"
+			android:max="5"
+			android:progress="0"
+			android:layout_weight=".80"/>
+			
+		<TextView
+		    android:id="@+id/shield_recharge_rate_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+		
+	</LinearLayout>
+	
+	<TextView  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Ship Weapon Damage"
+		android:textSize="20dp"
+		android:gravity="center_horizontal|bottom"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFFFF"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+	
+	    <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00CC00"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+    		
+		<SeekBar
+			android:id="@+id/ship_weapon_damage"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|bottom"
+			android:layout_width="0dp"
+			android:max="5"
+			android:progress="0"
+			android:layout_weight=".80"/>
+			
+		<TextView
+		    android:id="@+id/ship_weapon_damage_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+		
+	</LinearLayout>
+	
+	<TextView  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Ship Weapon Travel Speed"
+		android:textSize="20dp"
+		android:gravity="center_horizontal|bottom"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFFFF"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+	
+	    <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00CC00"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+    		
+		<SeekBar
+			android:id="@+id/ship_weapon_travel_speed"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|bottom"
+			android:layout_width="0dp"
+			android:max="5"
+			android:progress="0"
+			android:layout_weight=".80"/>
+			
+		<TextView
+		    android:id="@+id/ship_weapon_travel_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+    		android:gravity="center|bottom"
+    		android:layout_weight=".10"/>
+		
+	</LinearLayout>
+
+</LinearLayout>
+</ScrollView> 
+        
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/findDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_opponent" 
+    />
+    
+    <TextView android:id="@+id/title_paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_paired_devices"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        />
+        
+    <ListView 
+        android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="false"
+        android:layout_weight="1"
+    />
+    
+    <TextView android:id="@+id/title_new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_other_devices"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+    />
+    
+    <ListView android:id="@+id/new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="false"
+        android:layout_weight="2"
+    />
+   
+    <!-- Test button to transfer data -->
+    
+    <Button android:id ="@+id/Start_Game"
+        	android:layout_width = "fill_parent"
+        	android:layout_height = "wrap_content"
+       		android:text = "@string/sendsomething"/>
+    
+    <LinearLayout
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:weightSum="1">
+	
+	<Button
+		android:id="@+id/Go_back_from_newGame"
+		android:layout_height="wrap_content"
+		android:layout_width="0dp" 
+		android:layout_weight=".5"
+		android:textSize="12dp"
+		android:gravity="center"
+		android:textStyle="bold"
+		android:text="Go Back"/>
+		
+	<Button
+		android:id="@+id/Add_Options"
+		android:layout_height="wrap_content"
+		android:layout_width="0dp" 
+		android:layout_weight=".5"
+		android:textSize="12dp"
+		android:gravity="center"
+		android:textStyle="bold"
+		android:text="Options"/>
+	
+
+		
+</LinearLayout>
+    
+</LinearLayout>

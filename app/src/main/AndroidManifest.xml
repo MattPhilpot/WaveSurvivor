@@ -1,0 +1,98 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wave.survivor.game"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+         
+        <activity
+            android:name=".MainSplashScreen"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="wave.survivor.game.MM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".BluetoothService"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- space saved for continue -->
+        
+        <!-- space saved for new game -->
+        
+        <activity
+            android:name=".Upgrades"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="wave.survivor.game.Upgrades" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Achievements"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="wave.survivor.game.Achieve" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".About"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="wave.survivor.game.About" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".GamePanel"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="wave.survivor.game.GamePanel" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <service android:enabled="true" android:name=".Bluetooth" />
+        
+    </application>
+
+</manifest>

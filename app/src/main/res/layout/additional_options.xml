@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+<ScrollView
+	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+	
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:weightSum="1">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="10dp">
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp" 
+			android:layout_marginLeft="10dp"
+			android:layout_weight=".8">
+		
+			<TextView
+				android:text="Haptic Feedback"
+				android:textSize="20dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+				
+			<TextView
+				android:id="@+id/vibrate_text"
+				android:text="Device won't vibrate"
+				android:textSize="10dp"
+				android:layout_marginTop="3dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+    		
+    	<CheckBox  
+    		android:id="@+id/vibrate_option"
+    		android:layout_width="0dp"  
+    		android:layout_weight=".2" 
+    		android:layout_height="wrap_content" 
+    		android:gravity="right"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="10dp">
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp" 
+			android:layout_marginLeft="10dp"
+			android:layout_weight=".8">
+		
+			<TextView
+				android:text="Orientation Sensitivity"
+				android:textSize="20dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+				
+			<TextView
+				android:text="Controls rotation sensitivity "
+				android:textSize="10dp"
+				android:layout_marginTop="3dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+    		
+    	<TextView
+				android:id="@+id/sensitivity"
+				android:text="2"
+				android:textSize="24dp"
+    			android:layout_width="0dp"  
+    			android:layout_weight=".2" 
+    			android:layout_height="wrap_content" 
+    			android:gravity="center|bottom"/>
+		
+	</LinearLayout>
+	
+	<SeekBar
+			android:id="@+id/sense_slider"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_marginBottom="6dp"
+			android:max="40"
+			android:progress="20"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="10dp">
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp" 
+			android:layout_marginLeft="10dp"
+			android:layout_weight=".8">
+		
+			<TextView
+				android:text="Center Spot Leeway"
+				android:textSize="20dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+				
+			<TextView
+				android:text="Controls size of orientation center"
+				android:textSize="10dp"
+				android:layout_marginTop="3dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+    		
+    	<TextView
+				android:id="@+id/center_leeway"
+				android:text="0.5"
+				android:textSize="24dp"
+    			android:layout_width="0dp"  
+    			android:layout_weight=".2" 
+    			android:layout_height="wrap_content" 
+    			android:gravity="center|bottom"/>	
+	</LinearLayout>
+	
+	<SeekBar
+			android:id="@+id/leeway_slider"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_marginBottom="6dp"
+			android:max="10"
+			android:progress="5"/>
+	
+	<Button
+	android:id="@+id/calibration"
+	android:layout_weight="0.03" 
+	android:layout_width="fill_parent" 
+	android:text="Calibrate Sensor"
+	android:textSize="25dp" 
+	android:layout_marginTop="6dp"
+	android:layout_height="0dip"/>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:weightSum="1"
+		android:layout_marginTop="5dp">
+    	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".10"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="X = "
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="10dp"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:id="@+id/Yset"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".30"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="Wave"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="10dp"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".20"
+	        android:gravity="center_horizontal|bottom"
+	        android:text=""
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="10dp"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".10"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="Y = "
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="10dp"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:id="@+id/Xset"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".30"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="Wave"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="10dp"
+	        android:textStyle="bold" />
+	
+	</LinearLayout>
+	
+	
+    			
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+    
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Wave"
+    android:textSize="50dp"
+    android:textStyle="bold"
+    android:gravity="center_horizontal|bottom"
+	android:textColor="#FFFFFFFF"/>
+
+<TextView 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textStyle="bold"
+	android:text="Surviviors"
+	android:textSize="35dp"
+    android:gravity="center_horizontal|top"
+    android:textColor="#FFFFFFFF"	/>
+    
+<Button
+	android:id="@+id/Continue"
+	android:layout_weight="0.03" 
+	android:layout_width="fill_parent" 
+	android:text="Continue"
+	android:textSize="25dp" 
+	android:layout_marginTop="50dp"
+	android:layout_height="wrap_content"/>
+	
+<Button
+	android:id="@+id/New_Game"
+	android:layout_weight="0.03" 
+	android:layout_width="fill_parent" 
+	android:text="New Game"
+	android:textSize="25dp" 
+	android:layout_marginTop="15dp"
+	android:layout_height="wrap_content"/>
+	
+<Button
+	android:id="@+id/Upgrades"
+	android:layout_weight="0.03" 
+	android:layout_width="fill_parent" 
+	android:text="Upgrades"
+	android:textSize="25dp" 
+	android:layout_marginTop="15dp"
+	android:layout_height="wrap_content"/>
+	
+<Button
+	android:id="@+id/Achievements"
+	android:layout_weight="0.03" 
+	android:layout_width="fill_parent" 
+	android:text="Achievements &amp; Stats"
+	android:textSize="25dp" 
+	android:layout_marginTop="15dp"
+	android:layout_height="wrap_content"/>
+	
+<Button
+	android:id="@+id/About"
+	android:layout_weight="0.03" 
+	android:layout_width="fill_parent" 
+	android:text="About"
+	android:textSize="25dp" 
+	android:layout_marginTop="15dp"
+	android:layout_height="wrap_content"/>
+	
+<TextView 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textStyle="bold"
+	android:text="Unnamed Development"
+	android:textSize="10dp"
+    android:gravity="center"
+    android:layout_marginTop="12dp"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
